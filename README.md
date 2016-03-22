@@ -19,3 +19,8 @@ Note that the scoreDisplayView is a UIView that you create on the storyboard or 
 ```swift
 scoreDisplayer.displayAnyScore(12345678)
 ```
+
+### image1
+[[digits-images/image1.png]]
+### image2
+[[digits-images/image2.png]]
