@@ -61,8 +61,18 @@ class ScoreDisplay: NSObject {
         return count
     }
     
+    // remove subviews from a UIView
+    func removeAllSubviewsFrom(view : UIView) {
+        for subview in view.subviews {
+            if subview .isKindOfClass(UIImageView) {
+                subview.removeFromSuperview()
+            }
+        }
+    }
+    
     // display any score you want
     func displayAnyScore(score : Int) {
+        removeAllSubviewsFrom(displayView)
         processScore(score)
         processFrames(score)
         let count = getNumOfDigits(score)
@@ -108,7 +118,7 @@ class ScoreDisplay: NSObject {
                 frames.append(frame)
             }
         }
-        // if count is even number
+            // if count is even number
         else {
             let halfCount = count / 2
             // before
