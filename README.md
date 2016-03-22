@@ -21,6 +21,6 @@ scoreDisplayer.displayAnyScore(12345678)
 ```
 
 ### image1
-[[digits-images/image1.png]]
+[[GameScoreDisplay/digits-images/image1.png]]
 ### image2
-[[digits-images/image2.png]]
+[[GameScoreDisplay/digits-images/image2.png]]
